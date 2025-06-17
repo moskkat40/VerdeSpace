@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+.howItWorksSlider {
+  padding: 110px 113px;
+  max-width: 672px;
+  background-color: #E1E5EA;
+  margin: 0;
+  &__title {
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: #070707;
+    margin-bottom: 12px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #424446;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+}
+
+.swiper-pagination {
+  margin-bottom: 36px;
+}
+
+.swiper-pagination-bullet {
+  width: 24px;
+  height: 24px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $pink;
+}

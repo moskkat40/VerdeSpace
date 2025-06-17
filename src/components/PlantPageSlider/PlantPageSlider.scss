@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+
+.plantPageSlider {
+  &__slide {
+    width: 400px;
+    margin-top: 43px;
+  }
+  &__arrows {
+    display: flex;
+    width: 10px;
+    justify-content: space-around;
+  }
+  &__next {
+  width: 36px;
+  height: 36px;
+  gap: 10px;
+  rotate: 180deg;
+  border-radius: 50px;
+  border:#B3B7BE solid 1px;
+  background-color: #E1E5EA;
+  position: absolute;
+  top: 0;
+  right: 65px;
+  img {
+    width: 12px;
+    height: 16px;
+    margin: 8px 11px;
+  }
+  }
+  &__prev {
+    width: 36px;
+    height: 36px;
+    gap: 10px;
+    rotate: 0;
+    border-radius: 50px;
+    border:#B3B7BE solid 1px;
+    background-color: #E1E5EA;
+    position: absolute;
+    top: 0;
+    right: 0;
+    img {
+      width: 12px;
+      height: 16px;
+      margin: 10px 12px;
+    }
+  }
+}
+
+.swiper-wrapper {
+  margin-top: 26px;
+  margin-bottom: 50px;
+}
+
+.swiper-button-lock  {
+  display: block;
+}

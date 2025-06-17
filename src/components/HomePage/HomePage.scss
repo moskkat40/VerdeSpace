@@ -1,0 +1,133 @@
+@import '../../styles/variables';
+
+.homePage {
+  &__promo {
+    padding: 203px 48px 308px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  &__video {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  }
+  &__title {
+    position: relative;
+    z-index: 1;
+    max-width: 668px;
+    font-size: 64px;
+    color: $gray10;
+    margin-bottom: 24px;
+  }
+  &__subtitle {
+    position: relative;
+    z-index: 1;
+    font-size: 32px;
+    max-width: 548px;
+    color: $gray70;
+    margin-bottom: 48px;
+  }
+  &__button {
+    position: relative;
+    z-index: 1;
+    width: 321px;
+    border-radius: 12px;
+    padding: 12px 24px;
+    background-color:$haki;
+    border: none;
+    a {
+      font-size: 24px;
+      text-decoration: none;
+      color: $gray0;
+    }
+  }
+  &__swiper {
+    padding: 20px 0 100px;
+    display: flex;
+    justify-content: center;
+  }
+  &__text {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+  &__textTitle {
+    display: block;
+    width: 360px;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 120%;
+    color: $gray100
+  }
+  &__textLine {
+    display: block;
+    width: 888px;
+    height: 1px;
+    background-color: $gray50;
+  }
+  &__categoriesWrapper {
+    margin-top: 32px;
+    margin-bottom: 47px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__categoriesItemLink {
+    text-decoration: none;
+  }
+  &__categoriesItemText {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: $gray100;
+  }
+  &__marquee {
+    position: relative;
+    margin-inline: -48px;
+    width: calc(100% + 96px);
+    display: flex;
+    align-items: center;
+    max-width: 3000px;
+    overflow: hidden;
+  }
+  &__marqueeText {
+    display: flex;
+    align-items: center;
+    padding-block: 24px;
+    flex-shrink: 0;
+    animation: running-animation 20s linear infinite;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $pink;
+    gap: 5px;
+  }
+  &__marqueeLine {
+    display: block;
+    margin-inline: -48px;
+    width: calc(100% + 96px);
+    height: 1px;
+    background-color: $gray50;
+  }
+}
+
+@keyframes running-animation {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}

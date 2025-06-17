@@ -1,0 +1,94 @@
+@import '../../styles/variables';
+
+.newCommentModal {
+  width: 1100px;
+  padding: 24px;
+  margin: 0 162px;
+  margin: 0 auto;
+  border: 1px solid #B3B7BE;
+  display: flex;
+  border-radius: 12px;
+  background-color: $gray0;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 8px;
+  z-index: 1000;
+  &__title {
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #071A1A;
+  }
+  &__subtitle {
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+  &__stars {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+  }
+  &__star {
+    width: 20px;
+    height: 19px;
+    color: #AEAEAEEA;
+  }
+  &__text {
+    padding: 10px 0 0 10px;
+    margin-block: 15px;
+    height: 339px;
+    border: 1px solid #B3B7BE;
+    border-radius: 12px;
+    background-color: $gray0;
+    resize: none;
+    &::placeholder {
+      text-align: center;
+      padding: 140px;
+      font-size: 24px;
+      line-height: 150%;
+      color: #AEAEAEEA;
+    }
+  }
+  &__close {
+    position: absolute;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    border: 1px $gray90 solid;
+    background-color: $gray0;
+    font-size: 19px;
+  }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__uploadPhoto {
+    display: flex;
+    align-items:center;
+    gap: 32px;
+    font-size: 24px;
+    line-height: 150%;
+    color: $pink;
+    &::before {
+      content: url('/src/images/uploadPhoto.svg');
+      margin-top: 5px;
+    }
+  }
+  &__button {
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 24px;
+    line-height: 150%;
+    color: $gray0;
+    background-color: #022314;
+    border: none;
+
+  }
+}

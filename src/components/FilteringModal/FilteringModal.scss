@@ -1,0 +1,78 @@
+@import '../../styles/variables';
+
+.filteringModal {
+  position: absolute;
+  top: 200px;
+  left: 40px;
+  width: 777px;
+  border-radius: 12px;
+  border: 1px $gray90 solid;
+  padding: 24px;
+  background-color: white;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__close {
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    border: 1px $gray90 solid;
+    background-color: white;
+    font-size: 19px;
+
+  }
+  &__title {
+    font-size: 32px;
+    line-height: 120%;
+    color: $gray100;
+
+  }
+  &__subtitle {
+    font-size: 24px;
+    line-height: 150%;
+    color: $gray100;
+  }
+  &__block {
+    margin-top: 28px;
+  }
+  &__group {
+    display: flex;
+    gap: 53px;
+    margin-top: 24px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 207px;
+    border-radius: 8px;
+    border: 1px solid #424446;
+    padding-block: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+
+    input {
+      display: none;
+    }
+
+    &:has(input:checked) {
+      border: 1px #F45D94 solid;
+    }
+  }
+  &__button {
+    width: 100%;
+    margin-top: 32px;
+    border-radius: 12px;
+    padding: 12px 24px;
+    background-color: #063333B2;
+    font-size: 24px;
+    line-height: 150%;
+    border: none;
+    color: $gray0;
+  }
+}

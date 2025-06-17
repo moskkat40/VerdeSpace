@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+
+.header {
+  background-color: $gray0;
+  border-bottom: 1.5px solid var(#063333B2);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 42px;
+    color: $gray100;
+  }
+  &__rightBlock {
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__catalogLink {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 28px;
+    color: $gray100;
+  }
+  &__searchLink {
+    margin-top: 7px;
+    background-color: transparent;
+    border: none;
+  }
+  &__searchInput {
+    border-radius: 12px;
+    border: 1px solid #E1E5EA;
+    padding: 12px 24px;
+    background-color: $gray1;
+  }
+  &__logOut {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

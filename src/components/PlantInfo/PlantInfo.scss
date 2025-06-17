@@ -1,0 +1,96 @@
+@import '../../styles/variables';
+
+.plantInfo {
+  padding: 48px 0 80px;
+  display: flex;
+  gap: 50px;
+  &__imgs {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  &__wrapper {
+    display: flex;
+    gap: 20px;
+  }
+  &__titleBlock {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 120%;
+  }
+  &__score {
+    display: flex;
+  }
+  &__scoreImg {
+    width: 20px;
+    height: 19px;
+    margin-right: 2px;
+  }
+  &__reviewLink {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    color: $gray100;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    color: $gray100;
+    margin-bottom: 24px;
+  }
+  &__careTitle {
+    font-size: 32px;
+    line-height: 120%;
+    color: $gray100;
+    margin-bottom: 24px;
+  }
+  &__lightingTitle {
+    font-size: 24px;
+    line-height: 150%;
+    color: $gray100;
+    margin-bottom: 8px;
+  }
+  &__wateringTitle {
+    font-size: 24px;
+    line-height: 150%;
+    color: $gray100;
+    margin-bottom: 8px;
+  }
+  &__lightingDescr {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: $gray100;
+    margin-bottom: 12px;
+  }
+  &__wateringDescr {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: $gray100;
+    margin-bottom: 24px;
+  }
+  &__add {
+    display: flex;
+    gap: 8px;
+    flex-flow: row-reverse;
+    text-decoration: none;
+    align-items:center;
+  }
+  &__addText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $gray90;
+  }
+}

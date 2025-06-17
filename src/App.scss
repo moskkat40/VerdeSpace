@@ -1,3 +1,36 @@
-.starter {
-  font-size: 18px;
+@import './components/Authorization/Authorization';
+@import './components/Header/Header';
+@import './components/HomePage/HomePage';
+@import './components/Footer/Footer';
+
+@font-face {
+  font-family: 'Apercu Pro';
+  src: url('/src/fonts/apercu_regular_pro.otf') format('opentype');
+  font-weight: 400;
+}
+
+* {
+  font-family: 'Apercu Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-inline: 48px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+button {
+  cursor: pointer;
 }

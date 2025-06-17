@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+
+.favoritePage {
+  background-color: $gray0;
+  &__wrapper {
+    padding-bottom: 100px;
+
+  }
+}

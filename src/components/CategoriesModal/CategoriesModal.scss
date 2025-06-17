@@ -1,0 +1,83 @@
+@import '../../styles/variables';
+
+
+.сategoriesModal {
+  position: absolute;
+  top: 200px;
+  left: 40px;
+  width: 435px;
+  border-radius: 6px;
+  border: 1px $gray90 solid;
+  padding: 24px;
+  background-color: $gray0;
+  &__header{
+    margin-bottom: 24px;
+  }
+  &__search {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #B3B7BE;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 20px;
+    &::placeholder {
+      background: url('/src/images/search.svg') no-repeat left 10px center;
+      background-size: 16px 16px;
+      padding-left: 40px;
+    }
+  }
+  &__categories {
+    margin-bottom: 20px;
+  }
+  &__category {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 150%;
+    input {
+      width: 40px;
+      height: 40px;
+      appearance: none;
+      background-color: #fff;
+      border-radius: 6px;
+      border: 2px solid $gray50;
+      position: relative;
+    }
+  }
+  &__button {
+    width: 100%;
+    border-radius: 12px;
+    padding: 12px 24px;
+    background-color: #063333B2;
+    font-size: 24px;
+    line-height: 150%;
+    border: none;
+    color: $gray0;
+  }
+}
+
+
+.modal__category input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.сategoriesModal input[type="checkbox"]:checked {
+  background-color: #022314;
+  border: none;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 21px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    border-radius: 1px;
+    top: 2px;
+    left: 11px;
+    transform: rotate(45deg);
+  }
+
+}
+
